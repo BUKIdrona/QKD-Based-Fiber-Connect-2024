@@ -30,18 +30,40 @@
             z-index: 100;
             color: yellow;
         } */
+
+        .organisers{
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nsut {
+            padding: 5px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .meit{
+            margin: 5px;
+            height: 150px;
+            width: 500px;
+        }
+        
+
         
     </style>
 </head>
 <body class="background-image">
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About the Workshop</a></li>
-            <li><a href="program.html">Programme Content</a></li>
-            <li><a href="speakers.html">Speakers</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Organizers</a>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <!-- <li><a href="about.html">About the Workshop</a></li> -->
+            <li><a href="program.html" class="nav-link">Programme Content</a></li>
+            <li><a href="speakers.html" class="nav-link">Speakers</a></li>
+            <li class="dropdown" >
+                <a href="javascript:void(0)" class="dropbtn" class="nav-link">Organizers</a>
                 <div class="dropdown-content">
                     <a href="chief_patron.html">Chief Patron</a>
                     <a href="program_chair.html">Program Chair</a>
@@ -51,9 +73,10 @@
                     <!-- <a href="speakers.html">Speakers</a> -->
                 </div>
             </li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="payment.html">Payment</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="venue.html" class="nav-link">Venue</a></li>
+            <li><a href="registration.html" class="nav-link">Registration</a></li>
+            <li><a href="payment.html"  class="nav-link">Payment</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
         </ul>
     </nav>
     <main >
@@ -61,11 +84,73 @@
             <p>Technical Workshop on</p>
             <h2>QKD Based Fiber Connect</h2>
             <p>(August 9th - 10th, 2024)</p>
+            <p>Venue: <br> Netaji Subhas University of Technology <br>(formerly Netaji Subhas Institure of Technology) <br>New Delhi - 110078</p>
+            <a href="./registration.html" class="register-button">Register Now</a>
             <!-- <p>Join us for an exciting workshop on Quantum Key Distribution and related technologies!</p> -->
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>About the Workshop</h2>
+            <p>We are excited to announce QKD Based Fibre Connect 2024, a premier workshop dedicated to exploring the latest advancements and innovations in the field of quantum communication using optical fibre technology. This workshop aims to convene leading experts, researchers, and practitioners to delve into the newest developments and applications in Quantum Key Distribution (QKD) and related quantum communication technologies.</p>
+            <br>
+            <br>
+            <p>The program will broaden your understanding of
+                hybrid quantum systems, where classical and
+                quantum mechanics integrate seamlessly. This
+                comprehensive agenda is designed to equip
+                participants with a deep understanding of the current
+                challenges and future directions in quantum
+                communications, fostering an environment ripe for
+                innovation and collaboration. Whether you are a
+                seasoned professional or a newcomer to the field, this
+                workshop promises to provide invaluable knowledge
+                and networking opportunities that will drive the
+                advancement of quantum technologies. Join us for a
+                series of insightful talks, technological demonstrations,
+                and networking sessions with leading experts and
+                researchers in the domain.</p>
+
+                
+        </section>
+    </main>
+
+    <main>
+        <section>
+            <h2>Participants</h2>
+            
+            <p>The workshop is open to a wide range of participants,
+                including researchers, academics, and industry
+                professionals interested in quantum technologies.
+                Graduate students, postdoctoral fellows, and
+                early-career scientists are particularly encouraged to
+                attend, as the event provides an excellent opportunity
+                for networking and professional development.
+                Additionally, policymakers and stakeholders from the
+                tech industry who are interested in the practical
+                applications and commercialization of quantum key
+                distribution and related technologies are also
+                welcome. This diverse gathering aims to foster
+                interdisciplinary collaboration and advance the field of
+                quantum communication.</p>
+
+                <!-- <a href="./registration.html" class="register-button">Register Now</a> -->
+        </section>
+    </main>
+
+    <main>
+        <section>
+            <h2>Organised by:</h2>
+            <!-- <p>Organised by:</p> -->
+            <div class="organisers">
+                <img src="./public/images/NSUT_logo.png" class="nsut" alt="">
+                <img src="./public/images/meit_logo.jpg" class="meit" alt="">
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Netaji Subhas University of Technology</p>
     </footer>
+    <script src="script.js"></script> 
 </body>
 </html>

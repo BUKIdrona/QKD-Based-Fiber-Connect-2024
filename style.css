@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #FFE9D0;
     /* background-image: url("./public/images/NSUT.jpeg"); */
 }
 /* .background-image {
@@ -172,3 +173,27 @@ main h1{
 .dropdown-content a:hover {
     background-color: #030e34;
 }
+
+
+.nav-link {
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+    }
+
+    .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red; /* Color of the underline */
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+    width: 100%;
+    }
