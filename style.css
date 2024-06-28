@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #FFE9D0;
+    background-color: lightpink;
     /* background-image: url("./public/images/NSUT.jpeg"); */
 }
 
@@ -73,6 +73,9 @@ nav{
     z-index: 1000;
     opacity: 85%;
     background-color: #071952;
+    /* border-radius: 10px; */
+    /* margin: 5px; */
+    /* padding: 5px; */
      /* */
      /* background-image: url(https://www.idquantique.com/wp-content/uploads/IDQ-Corporate-banner.png); */
 }
