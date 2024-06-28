@@ -6,30 +6,20 @@
     <title>Registration - QKD Based Fiber Connect 2024</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .venue{
+        section{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-        }
-        main{
-            /* padding: 0;
-            margin: 0; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            /* background-image: url("./public/images/nsut4.jpeg"); */
+            /* align-items: center; */
+            padding: 5px;
+            padding: 5px;
         }
 
-        main h2{
-            font-size:60px;
-            color: red;
-        }
-
-        main p{
-            font-size: 30px;
-            font-weight: 700;
+        .nsut{
+            margin: 20px;
+            padding: 10px;
+            height: 300px;
+            width: 500px;
         }
 
     </style>
@@ -37,27 +27,35 @@
 <body>
     
     <nav>
-        <ul>
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <!-- <li><a href="about.html">About the Workshop</a></li> -->
-            <li><a href="program.html" class="nav-link">Programme Content</a></li>
-            <li><a href="speakers.html" class="nav-link">Speakers</a></li>
-            <li class="dropdown" >
-                <a href="javascript:void(0)" class="dropbtn" class="nav-link">Organizers</a>
-                <div class="dropdown-content">
-                    <a href="chief_patron.html">Chief Patron</a>
-                    <a href="program_chair.html">Program Chair</a>
-                    <a href="convenor.html">Convenor</a>
-                    <a href="advisory_committee.html">Advisory Committee</a>
-                    <a href="technical_committee.html">Technical Committee</a>
-                    <!-- <a href="speakers.html">Speakers</a> -->
-                </div>
-            </li>
-            <li><a href="venue.html" class="nav-link">Venue</a></li>
-            <li><a href="registration.html" class="nav-link">Registration</a></li>
-            <li><a href="payment.html"  class="nav-link">Payment</a></li>
-            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-        </ul>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./public/images/NSUT_logo.png" alt="" class="logo1">
+                <img src="./public/images/meit_logo.jpg" alt="" class="logo2">
+                <p>QKD Based Fiber Connect</p>
+            </a>
+            
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <!-- <li><a href="about.html">About the Workshop</a></li> -->
+                <li><a href="program.html" class="nav-link">Programme Content</a></li>
+                <li><a href="speakers.html" class="nav-link">Speakers</a></li>
+                <li class="dropdown" >
+                    <a href="javascript:void(0)" class="dropbtn" class="nav-link">Organizers</a>
+                    <div class="dropdown-content">
+                        <a href="chief_patron.html">Chief Patron</a>
+                        <a href="program_chair.html">Program Chair</a>
+                        <a href="convenor.html">Convenor</a>
+                        <a href="committee.html">Committee</a>
+                    </div>
+                </li>
+                <li><a href="venue.html" class="nav-link">Venue</a></li>
+                <li><a href="registration.html" class="nav-link">Registration/Payment</a></li>
+                <!-- <li><a href="payment.html"  class="nav-link">Payment</a></li> -->
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
         <h1>QKD Based Fiber Connect 2024</h1>
@@ -65,9 +63,10 @@
     </header>
     <main>
         <section>
-            <div class="venue">
-                <img src="./public/images/nsut4.jpeg" alt="">
-                    <h2>Netaji Subhas University of Technology <br>(formerly Netaji Subhas Institure of Technology) <br>New Delhi - 110078</h2>
+            <div class="card">
+                <img src="./public/images/nsut3.jpeg" alt="" class="card_image nsut">
+                <div class="name_bio">
+                    <h1>Netaji Subhas University of Technology <br>(formerly Netaji Subhas Institure of Technology) <br>New Delhi - 110078</h1>
                     <p>Netaji Subhas University of
                         Technology (formerly Netaji Subhas
                         Institute of Technology) is regarded as
@@ -92,6 +91,8 @@
                         prominently in various national level
                         surveys conducted by reputed
                         professional and trade magazines.</p>
+                        <p>For more information, check the <a href="http://nsut.ac.in/en/home" target="_blank">official website</a></p>
+                </div>
             </div>
         </section>
     </main>

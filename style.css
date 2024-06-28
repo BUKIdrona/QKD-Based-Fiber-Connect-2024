@@ -8,26 +8,33 @@ body {
     background-color: #FFE9D0;
     /* background-image: url("./public/images/NSUT.jpeg"); */
 }
-/* .background-image {
-    background-image: url("./public/images/nsut4.jpeg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
+
+
+
+.card{
+    margin: 5px;
+    padding: 5px;
     display: flex;
-    flex-direction: column;
-    /* opacity: 70%; */
-} */
-/* .background-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed (0.5 is 50% black) */
-} */
+    /* height: 200px;
+    width: 100%; */
+    border-radius: 5px;
+    background-color:#37B7C3;
+}
+
+.name_bio{
+    margin: 0;
+    padding: 5px;
+    width: 100vw;
+    /* background-color: yellow; */
+}
+
+.card_image{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+}
 
 .main-content {
     position: relative;
@@ -50,20 +57,58 @@ body {
 }
 
 header {
-    background-color: #088395;
+    /* background-color: #088395; */
+    background-image: url(./public/images/background_images/IDQ-Corporate-banner.webp);
     color: white;
     padding: 20px;
     text-align: center;
 }
 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
     z-index: 1000;
     opacity: 85%;
     background-color: #071952;
+     /* */
+     /* background-image: url(https://www.idquantique.com/wp-content/uploads/IDQ-Corporate-banner.png); */
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    /*  */
+}
+
+.logo a p{
+    color: white;
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+.logo1{
+    height: 30px;
+    width: 30px;
+}
+
+.logo2{
+    height: 30px;
+    width: 100px;
+    margin-right: 5px;
+}
 nav ul {
     /* background-color: #333; */
     color: white;
@@ -75,7 +120,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    padding: 10px 20px;
+    padding: 5px;
 }
 
 nav ul li a {
@@ -88,7 +133,7 @@ main {
     flex: 1;
     padding: 20px;
     margin: 20px;
-    background-color: #37B7C3;
+    background-color: rgb(111, 117, 113);
 }
 
 footer {
@@ -121,13 +166,8 @@ ul li {
     margin: 5px 0;
 }
 
-h2 {
-    color: #0073e6;
-}
-main h1{
 
-    color: rgb(34, 8, 104);
-}
+
 
 /* Dropdown container */
 .dropdown {
