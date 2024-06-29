@@ -27,19 +27,56 @@
     .organisers {
         display: flex;
         flex-direction: column;
-
-        align-items: center; /* Align items to the start */
-        justify-content: center; /* Justify content to the start */
+        align-items: center; /* Align items to the center */
+        justify-content: center; /* Justify content to the center */
     }
 
     .nsut {
         width: 80%;
-         /* Make it full width */
-        height: 20%; /* Adjust height automatically */
+        height: auto; /* Adjust height automatically */
     }
 
     .meit {
-        width: 100%; /* Make it full width */
-        height: 40%; /* Adjust height automatically */
+        width: 100%;
+        height: auto; /* Adjust height automatically */
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .name_bio {
+        text-align: justify;
+    text-align-last: center; /* Ensures the last line is centered */
+    margin: 0; /* Removes any default margins */
+    padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 100%; /* Ensure it takes full width */
+        text-align: center; /* Center align the text */
+        overflow-wrap: break-word; /* Ensure text wraps properly */
+    }
+
+    .name_bio h1, .name_bio h4, .name_bio p {
+        margin: 5px; /* Add margin for better spacing */
+    }
+
+    .speaker_bio {
+        text-align: justify;
+        text-align-last: center; /* Ensures the last line is centered */
+        margin: 0; /* Removes any default margins */
+        padding: 5px;
+        /* display: none; */
+    }    
+
+    .card_image {
+        height: auto; /* Adjust height automatically */
+        width: 80%; /* Adjust width for better fit */
     }
 }
