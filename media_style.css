@@ -1,0 +1,24 @@
+@media screen and (max-width: 991px){
+    .nav-toggle{
+        display:block;
+        margin-right: 20px;
+        font-weight: 1000;
+        color: black;
+    }
+
+    .nav_bar{
+        display: none;
+    }
+
+    .organisers{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .logo_text{
+        display: none;
+    }
+}

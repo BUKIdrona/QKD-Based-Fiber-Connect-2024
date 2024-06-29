@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    /* overflow: hidden; */
 
 }
 
@@ -80,12 +81,17 @@ nav{
     opacity: 85%;
     /* background-color: transparent; */
      background-color: #493b2a; 
+     /* overflow: hidden; */
      
     /* border-radius: 10px; */
     /* margin: 5px; */
     /* padding: 5px; */
      /* */
      /* background-image: url(https://www.idquantique.com/wp-content/uploads/IDQ-Corporate-banner.png); */
+}
+
+.nav-toggle{
+    display: none;
 }
 
 .logo{
@@ -149,6 +155,7 @@ main {
     margin: 20px;
     /* background-color: rgb(111, 117, 113); */
     background-image: linear-gradient( 109.6deg,  rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    overflow: hidden;
 }
 
 footer {
@@ -186,6 +193,7 @@ ul li {
 
 /* Dropdown container */
 .dropdown {
+    z-index: 1000;
     display: inline-block;
     position: relative;
 }
@@ -253,5 +261,102 @@ ul li {
     width: 100%;
     }
 
+
+
+
+
+    /* index page */
+
+    .index_main_h2{
+        /* background-color: brown; */
+        z-index: 5;
+        font-size:60px;
+        color: rgb(255, 248, 55);
+    }
+
+    .index_main_p{
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+    }
+
+    /* section h2{
+        z-index: 100;
+        color: yellow;
+    } */
+
+    .organisers{
+        display: flex;
+        margin: 5px;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nsut {
+        padding: 5px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .meit{
+        margin: 5px;
+        height: 150px;
+        width: 500px;
+    }
+
+    
+        .main1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.7)), url('./public/images/background_images/b1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            /* position: fixed; */
+        }
+
+        .main2 {
+            background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: white;
+        }
+
+        .main3 {
+            background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: white;
+        }
+
+        .main4 {
+            background: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.7)), url('./public/images/nsut4.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: white;
+        }
 
 
