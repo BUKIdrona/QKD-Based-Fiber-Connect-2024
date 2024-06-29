@@ -25,19 +25,21 @@
 
 @media screen and (max-width: 535px) {
     .organisers {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Align items to the start */
-        justify-content: flex-start; /* Justify content to the start */
+
+        align-items: center; /* Align items to the start */
+        justify-content: center; /* Justify content to the start */
     }
 
     .nsut {
-        width: 100%;
+        width: 80%;
          /* Make it full width */
-        height: auto; /* Adjust height automatically */
+        height: 20%; /* Adjust height automatically */
     }
 
     .meit {
         width: 100%; /* Make it full width */
-        height: auto; /* Adjust height automatically */
+        height: 40%; /* Adjust height automatically */
     }
 }
