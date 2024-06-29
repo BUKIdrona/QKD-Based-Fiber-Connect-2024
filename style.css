@@ -28,9 +28,6 @@ body {
 }
 
 .name_bio{
-    text-align: justify;
-    text-align-last: center; /* Ensures the last line is centered */
-    margin: 0; /* Removes any default margins */
     padding: 5px;
     margin: 0;
     /* padding: 5px; */
