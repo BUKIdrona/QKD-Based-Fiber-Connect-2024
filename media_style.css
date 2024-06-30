@@ -1,16 +1,38 @@
-@media screen and (max-width: 991px){
-    .nav-toggle{
-        display:block;
+@media screen and (max-width: 991px) {
+    .nav-toggle {
+        display: block;
         margin-right: 20px;
         font-weight: 1000;
         color: black;
+        cursor: pointer;
     }
 
-    .nav_bar{
-        display: none;
+    .nav_bar {
+        /* display: none;
+         */
+         background-color: black;
+         position: absolute;
+         left: -100%;
+         top: 100%;
+         width: 100%;
+         padding-block: 20px;
     }
 
-    .organisers{
+    .nav_bar.active{
+        left: 0;
+        display: block;
+    }
+
+    .nav_bar ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_bar.active {
+        display: block;
+    }
+
+    .organisers {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -18,7 +40,7 @@
 }
 
 @media screen and (max-width: 1190px) {
-    .logo_text{
+    .logo_text {
         display: none;
     }
 }
@@ -27,18 +49,18 @@
     .organisers {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Align items to the center */
-        justify-content: center; /* Justify content to the center */
+        align-items: center;
+        justify-content: center;
     }
 
     .nsut {
         width: 80%;
-        height: auto; /* Adjust height automatically */
+        height: auto;
     }
 
     .meit {
         width: 100%;
-        height: auto; /* Adjust height automatically */
+        height: auto;
     }
 
     .card {
@@ -51,36 +73,35 @@
 
     .name_bio {
         text-align: justify;
-    text-align-last: center; /* Ensures the last line is centered */
-    margin: 0; /* Removes any default margins */
-    padding: 5px;
+        text-align-last: center;
+        margin: 0;
+        padding: 5px;
         display: flex;
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        width: 100%; /* Ensure it takes full width */
-        text-align: center; /* Center align the text */
-        overflow-wrap: break-word; /* Ensure text wraps properly */
+        width: 100%;
+        text-align: center;
+        overflow-wrap: break-word;
     }
 
     .name_bio h1, .name_bio h4, .name_bio p {
-        margin: 5px; /* Add margin for better spacing */
+        margin: 5px;
     }
 
     .speaker_bio {
         text-align: justify;
-        text-align-last: center; /* Ensures the last line is centered */
-        margin: 0; /* Removes any default margins */
+        text-align-last: center;
+        margin: 0;
         padding: 5px;
-        /* display: none; */
-    }    
+    }
 
     .card_image {
-        height: auto; /* Adjust height automatically */
-        width: 80%; /* Adjust width for better fit */
+        height: auto;
+        width: 80%;
     }
+
     .event_map {
-        /* margin ; */
         width: 100%;
     }
 
@@ -96,6 +117,6 @@
     .event_location {
         text-align: center;
     }
+
+    
 }
-
-
