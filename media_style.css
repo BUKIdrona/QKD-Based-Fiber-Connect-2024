@@ -85,6 +85,10 @@
     }
 
     iframe {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
         width: 100%;
         height: auto;
     }
