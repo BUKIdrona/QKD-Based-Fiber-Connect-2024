@@ -13,11 +13,24 @@
             justify-content: center;
         }
 
-        .nsut {
-            margin: 20px;
-            padding: 10px;
-            height: 60%;
-            width: 60%;
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .fade {
+            animation:  2s infinite;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
         }
 
         .event_location {
@@ -28,7 +41,6 @@
         }
 
         .event_map {
-            /* border-radius: 5px; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -36,73 +48,45 @@
             padding: 5px;
         }
 
-        .google_map{
-            height: 400px;
-            width: 70%;
-            border-radius: 5px;
+        
+        .cllg{
+            overflow:hidden ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(109.6deg, rgba(36, 45, 57, 1) 11.2%, rgba(16, 37, 60, 1) 51.2%, rgba(0, 0, 0, 1) 98.6%);
         }
-
-
-        @media screen and (max-width: 750px) {
-
-            
-
-            .card {
+        
+        @media  screen and (max-width: 801px) {
+            .cllg{
+                
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
                 flex-wrap: wrap;
             }
-
             .name_bio {
-                text-align: justify;
-                text-align-last: center;
-                margin: 0;
-                padding: 5px;
-                display: flex;
-                flex-direction: column;
-                justify-items: center;
-                align-items: center;
-                width: 100%;
-                text-align: center;
-                overflow-wrap: break-word;
-            }
+        text-align: justify;
+    text-align-last: center; /* Ensures the last line is centered */
+    margin: 0; /* Removes any default margins */
+    padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 100%; /* Ensure it takes full width */
+        text-align: center; /* Center align the text */
+        overflow-wrap: break-word; /* Ensure text wraps properly */
+    }
+        }
 
-            .name_bio h1, .name_bio h4, .name_bio p {
-                margin: 5px;
-            }
-
-            .speaker_bio {
-                text-align: justify;
-                text-align-last: center;
-                margin: 0;
-                padding: 5px;
-            }
-
-            .card_image {
-                height: auto;
-                width: 80%;
-            }
-
-            .event_map {
-                margin-left: 0;
-                width: 100%;
-            }
-
-            iframe {
-                width: 100%;
-                height: auto;
-            }
-
-            .google_map{
-                width: 60%;
-                height: 200px;
-            }
-
-            .event_location {
-                text-align: center;
-            }
+        .nsut{
+            height: 40vh;
+            width: 60vw;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -143,14 +127,24 @@
     </header>
     <main>
         <section>
-            <div class="card">
-                <img src="./public/images/nsut3.jpeg" alt="" class="card_image nsut">
+            <div class="cllg">
+                <div class="slideshow-container">
+                    <img src="./public/images/NSUT.jpeg" class="slides fade nsut">
+                    <img src="./public/images/nsut4.jpeg" class="slides fade nsut">
+                    <img src="./public/images/nsut3.jpeg" class="slides fade nsut">
+                    <img src="./public/images/nsut5.jpeg" class="slides fade nsut">
+                    <img src="./public/images/NSUT_(formerly_NSIT).jpg" class="slides fade nsut">
+                    <img src="./public/images/nsut6.jpeg" class="slides fade nsut">
+                    <img src="./public/images/nsut7.jpg" class="slides fade nsut">
+                    
+                </div>
                 <div class="name_bio">
-                    <h1 >Netaji Subhas University of Technology <br>New Delhi - 110078</h1>
+                    <h1>Netaji Subhas University of Technology <br>(formerly Netaji Subhas Institute of Technology) <br>New Delhi - 110078</h1>
                     <p class="speaker_bio">Netaji Subhas University of Technology (formerly Netaji Subhas Institute of Technology) is regarded as one of the premier engineering institutions in India. It was established in the year 1983 as Delhi Institute of Technology with the objective of meeting the growing demands of manpower in the emerging fields of engineering and technology with a close social and industrial interface. NSUT believes in building strong cultural roots among the students and strives to provide a balanced environment for their growth. The overall academic environment in the university is highly conducive for achieving excellence in education and research. It has been consistently ranked as one of the top engineering colleges in India and has featured prominently in various national level surveys conducted by reputed professional and trade magazines.</p>
                     <p>For more information, check the <a href="http://nsut.ac.in/en/home" target="_blank">official website</a></p>
                 </div>
             </div>
+            
         </section>
         <div class="event_location">
             <h1>Event Location</h1>
@@ -158,19 +152,19 @@
             <p>Room No. 206/8A (connecting block), 3rd floor</p>
         </div>
         <div class="event_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.6713791851944!2d77.03555077528814!3d28.609633775677214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0568e3d71539%3A0xed2b69c88b0c4546!2sConnecting%20Block!5e0!3m2!1sen!2sin!4v1719586324838!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google_map"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.6713791851944!2d77.03555077528814!3d28.609633775677214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0568e3d71539%3A0xed2b69c88b0c4546!2sConnecting%20Block!5e0!3m2!1sen!2sin!4v1719586324838!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="event_location">
             <h1>Getting Here</h1>
             <ul>
                 <li>
                     <p><strong>By Flight:</strong></p>
-                    <p>Indira Gandhi International Airport (DEL) has direct connectivity to NSUT-Delhi. Participants can book a cab/taxi directly from the airport to cover 17 km of distance in 30 minutes.</p>
+                    <p class="speaker_bio">Indira Gandhi International Airport (DEL) has direct connectivity to NSUT-Delhi. Participants can book a cab/taxi directly from the airport to cover 17 km of distance in 30 minutes.</p>
                 </li>
                 <br>
                 <li>
                     <p><strong>By Metro:</strong></p>
-                    <p>The nearest metro station to NSUT-Delhi is Dwarka Mor Metro Station (Blue Line). Participants can take an e-rikshaw from the Dwarka Mor metro station to reach NSUT-Delhi in 5 minutes. Alternatively, participants can also cover this 1 km distance by walking for around 15 minutes.</p>
+                    <p class="speaker_bio">The nearest metro station to NSUT-Delhi is Dwarka Mor Metro Station (Blue Line). Participants can take an e-rikshaw from the Dwarka Mor metro station to reach NSUT-Delhi in 5 minutes.</p>
                 </li>
             </ul>
         </div>

@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 700px) {
     .organisers {
         display: flex;
         flex-direction: column;
@@ -79,4 +79,19 @@
         height: auto; /* Adjust height automatically */
         width: 80%; /* Adjust width for better fit */
     }
+    .event_map {
+        /* margin ; */
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .event_location {
+        text-align: center;
+    }
 }
+
+
