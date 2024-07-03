@@ -296,14 +296,14 @@ ul li {
 
     .nsut {
         padding: 5px;
-        height: 200px;
-        width: 200px;
+        width: 20%;
+        height: 20%;
     }
 
     .meit{
         margin: 5px;
-        height: 150px;
-        width: 500px;
+        width: 40%;
+        height: 20%;
     }
 
     
@@ -315,7 +315,7 @@ ul li {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;
+            height: 90vh;
             border-radius: 10px;
             padding: 5px;
             margin: 5px;
@@ -329,7 +329,7 @@ ul li {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;
+            /* height: 100vh; */
             border-radius: 10px;
             padding: 5px;
             margin: 5px;
@@ -341,7 +341,7 @@ ul li {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;
+            /* height: 100vh; */
             border-radius: 10px;
             padding: 5px;
             margin: 5px;
@@ -353,7 +353,7 @@ ul li {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;
+            /* height: 100vh; */
             border-radius: 10px;
             padding: 5px;
             margin: 5px;
