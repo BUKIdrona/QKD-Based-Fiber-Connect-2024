@@ -36,6 +36,9 @@
     .organisers {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* overflow: hidden; */
         flex-wrap: wrap;
     }
 }
@@ -47,21 +50,19 @@
 }
 
 @media screen and (max-width: 700px) {
-    .organisers {
+    .organisers{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        /* flex-direction: row; */
     }
 
     .nsut {
-        width: 80%;
-        height: auto;
+        width: 100px;
+        height: 100px;
     }
 
     .meit {
-        width: 100%;
-        height: auto;
+        width: 200px;
+        height: 100px;
     }
 
     .card {
