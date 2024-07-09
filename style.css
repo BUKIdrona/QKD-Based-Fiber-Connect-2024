@@ -5,7 +5,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: yellow;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(15,13,14,0.9641106442577031) 46%);
     /* background-image: url("./public/images/NSUT.jpeg"); */
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,6 +68,9 @@ body {
 header {
     /* background-color: #088395; */
     background-image: url(./public/images/background_images/IDQ-Corporate-banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     padding: 20px;
     text-align: center;
@@ -81,7 +85,7 @@ nav{
     z-index: 1000;
     opacity: 85%;
     /* background-color: transparent; */
-     background-color: #493b2a; 
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
      /* overflow: hidden; */
      
     /* border-radius: 10px; */
@@ -160,7 +164,8 @@ main {
 }
 
 footer {
-    background-color: #071952;
+    /* background-color: #071952; */
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     color: white;
     text-align: center;
     padding: 10px;
@@ -311,7 +316,7 @@ ul li {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.7)), url('./public/images/background_images/b1.jpg');
+            background: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.7)), url('./public/images/background_images/b4.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
