@@ -27,6 +27,39 @@
             background-position: center;
 
         } */
+        .flash-message {
+            background-color: black;
+            color: yellow;
+            font-weight: 800;
+            height: 40px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flash-message p {
+            position: absolute;
+            white-space: nowrap;
+            animation: move 10s linear infinite;
+        }
+        @media (max-width: 600px) {
+            .flash-message {
+                height: 30px;
+                font-size: 12px;
+            }
+        }
+        @media (max-width: 460px) {
+            .flash-message {
+                display: none;
+            }
+        }
+
+        .last{
+            color: yellow;
+        }
+        
+        
         
     </style>
 </head>
@@ -61,6 +94,9 @@
             </div>
             <a href="#" class="nav-toggle hover-link" id="nav-toggle">☰</a>
         </nav>
+        <div class="flash-message">
+            <p>The last date for registration has been extended to August 1st, 2024!</p>
+        </div>
         <main class="main1">
             <section>
                 <div class="main1_box">
@@ -70,6 +106,9 @@
                     <h2 class="index_main_h2">QKD Based Fiber Connect</h2>
                     <p class="index_main_p">August 9th - 10th, 2024</p>
                     <br>
+                        <p class="index_main_p last"> Last date to register: August 1st, 2024</p>
+                    <br>
+
                     <p><strong>Venue: <br> Netaji Subhas University of Technology <br>New Delhi - 110078</strong></p>
                     <br>
                     <a href="./registration.html" class="register-button">Register Now</a>
